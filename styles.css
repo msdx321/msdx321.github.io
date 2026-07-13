@@ -124,6 +124,7 @@ svg {
   font-weight: 700;
   letter-spacing: -0.02em;
   text-decoration: none;
+  white-space: nowrap;
 }
 
 nav {
@@ -375,6 +376,15 @@ h3 {
   color: var(--muted);
 }
 
+.tools-list h3 a {
+  color: var(--text);
+  text-decoration: none;
+}
+
+.tools-list h3 a:hover {
+  color: var(--accent);
+}
+
 .publications {
   display: block;
 }
@@ -575,6 +585,12 @@ h3 {
     flex-direction: column;
     justify-content: center;
     gap: 0.5rem;
+  }
+}
+
+@media (max-width: 350px) {
+  nav a[href="#tools"] {
+    display: none;
   }
 }
 
